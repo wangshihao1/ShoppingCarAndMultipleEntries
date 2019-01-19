@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <CheckBox
+        android:id="@+id/sml_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        />
+    <ImageView
+        android:id="@+id/sml_icon"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/sml_check"
+        />
+    <TextView
+        android:id="@+id/sml_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sml_icon"
+        />
+    <TextView
+        android:id="@+id/sml_price"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sml_icon"
+        android:layout_alignParentBottom="true"
+        android:text="￥"
+        />
+
+    <com.bawei.yklx.ui.custom.CustomView
+        android:id="@+id/custom_view"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/sml_price"
+        >
+
+    </com.bawei.yklx.ui.custom.CustomView>
+</RelativeLayout>
